@@ -21,6 +21,7 @@ disk: 1024
 mounts:
     # Satis storage
     "/satis": "shared:files/satis"
+    "/.global/cache": "shared:files/cache"
 
 # The configuration of app when it is exposed to the web.
 web:
