@@ -1,0 +1,13 @@
+{
+    "name": "xtfer/platformsh-example-satis",
+    "type": "project",
+    "require": {
+        "composer/satis": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Christopher Skene",
+            "email": "chris@xtfer.com"
+        }
+    ]
+}
