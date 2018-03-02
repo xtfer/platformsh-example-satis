@@ -28,6 +28,7 @@ web:
 
 hooks:
     build: |
+        set -e
         php vendor/bin/satis build satis.json satis
 
 crons:
