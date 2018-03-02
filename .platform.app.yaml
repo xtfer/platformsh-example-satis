@@ -30,9 +30,3 @@ hooks:
     build: |
         set -e
         php vendor/bin/satis build satis.json satis
-
-crons:
-    # Rebuild Satis every 24 hours
-    satis:
-        spec: '0 24 * * *'
-        cmd: ''
