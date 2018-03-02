@@ -2,10 +2,10 @@
   "name": "Example Satis repository",
   "homepage": "http://packages.example.org",
   "repositories": [
-    { "type": "composer", "url": "http://packages.example.org/" },
+    { "type": "composer", "url": "http://packages.example.org/" }
   ],
   "require": {
 	  "platformsh/client": "dev-master"
-  }
+  },
   "require-all": true
 }
