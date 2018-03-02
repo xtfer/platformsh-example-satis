@@ -17,12 +17,6 @@ variables:
 # The size of the persistent disk of the application (in MB).
 disk: 1024
 
-# The mounts that will be performed when the package is deployed.
-mounts:
-    # Satis storage
-    "/satis": "shared:files/satis"
-    "/.global/cache": "shared:files/cache"
-
 # The configuration of app when it is exposed to the web.
 web:
     locations:
@@ -33,11 +27,11 @@ web:
             passthru: "/index.php"
 
 hooks:
-    deploy: |
+    build: |
         php vendor/bin/satis build satis.json satis
 
 crons:
-    # Rebuild Satis every 12 hours.
+    # Rebuild Satis every 24 hours
     satis:
-        spec: '0 */12 * * *'
-        cmd: 'php vendor/bin/satis build satis.json satis'
+        spec: '0 24 * * *'
+        cmd: ''

@@ -2,9 +2,10 @@
   "name": "Example Satis repository",
   "homepage": "http://packages.example.org",
   "repositories": [
-    { "type": "vcs", "url": "https://github.com/mycompany/privaterepo" },
-    { "type": "vcs", "url": "http://svn.example.org/private/repo" },
-    { "type": "vcs", "url": "https://github.com/mycompany/privaterepo2" }
+    { "type": "composer", "url": "http://packages.example.org/" },
   ],
+  "require": {
+	  "platformsh/client": "dev-master"
+  }
   "require-all": true
 }
