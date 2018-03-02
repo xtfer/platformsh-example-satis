@@ -7,5 +7,6 @@
   "require": {
 	  "platformsh/client": "dev-master"
   },
-  "require-all": true
+  "require-all": true,
+  "archive": { "directory": "dist" }
 }
