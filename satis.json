@@ -2,5 +2,8 @@
   "name": "Example Satis repository",
   "homepage": "https://packages.example.org",
   "require-all": true,
-  "archive": { "directory": "dist" }
+  "archive": {
+    "directory": "dist",
+	"skip-dev": "true",
+  }
 }
