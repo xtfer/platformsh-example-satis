@@ -1,12 +1,6 @@
 {
   "name": "Example Satis repository",
   "homepage": "https://packages.example.org",
-  "repositories": [
-    { "type": "composer", "url": "https://packagist.org/" }
-  ],
-  "require": {
-	  "platformsh/client": "dev-master"
-  },
   "require-all": true,
   "archive": { "directory": "dist" }
 }
